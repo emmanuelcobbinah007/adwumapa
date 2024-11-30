@@ -1,0 +1,172 @@
+{
+  "jobs": [
+    {
+      "id": 1,
+      "title": "Software Engineer",
+      "type": "Full-Time",
+      "description": "Design, develop, and maintain innovative applications while collaborating with teams to deliver optimized solutions and meet user needs. Ideal for candidates skilled in modern programming languages, experienced in agile workflows, and eager to tackle technical challenges.",
+      "salary_range": "$70,000 - $100,000",
+      "location": "San Francisco, CA",
+      "company": {
+          "name": "Tech Innovators Inc.",
+          "description": "Tech Innovators Inc. is at the forefront of technological advancements, creating cutting-edge software solutions that empower businesses worldwide. Our mission is to simplify complex processes and deliver unparalleled value through our innovative platforms and tools.",
+          "contact_email": "hr@techinnovators.com",
+          "contact_phone": "+1-555-0101"
+      }
+  },
+  {
+      "id": 2,
+      "title": "Graphic Designer",
+      "type": "Freelance",
+      "description": "Create visually appealing designs for digital and print media while collaborating with clients to bring their visions to life. Ideal for candidates proficient in design software, with a keen eye for detail and a creative approach to problem-solving.",
+      "salary_range": "$25 - $50/hour",
+      "location": "Remote",
+      "company": {
+          "name": "Design Studio Co.",
+          "description": "Design Studio Co. specializes in crafting unique visual experiences for brands and individuals. From logos to websites, our talented team ensures every project exceeds expectations with creativity and precision.",
+          "contact_email": "info@designstudio.com",
+          "contact_phone": "+1-555-0202"
+      }
+  },
+  {
+      "id": 3,
+      "title": "Electrician",
+      "type": "Full-Time",
+      "description": "Install, repair, and maintain electrical systems in residential and commercial settings. Ideal for licensed professionals with strong problem-solving skills and a commitment to safety standards.",
+      "salary_range": "$45,000 - $65,000",
+      "location": "New York, NY",
+      "company": {
+          "name": "Bright Sparks Electricals",
+          "description": "Bright Sparks Electricals has been powering homes and businesses with reliable electrical solutions for over a decade. Our team is dedicated to providing top-notch service with a focus on safety and efficiency.",
+          "contact_email": "support@brightsparks.com",
+          "contact_phone": "+1-555-0303"
+      }
+  },
+    {
+      "id": 4,
+      "title": "UI/UX Designer",
+      "type": "Part-Time",
+      "description": "Design intuitive user interfaces and seamless user experiences across web and mobile platforms. Ideal for candidates with a strong understanding of design principles, user research, and prototyping tools.",
+      "salary_range": "$40 - $60/hour",
+      "location": "Remote",
+      "company": {
+          "name": "Creative Minds Studio",
+          "description": "Creative Minds Studio is a leading design agency specializing in transforming digital experiences. Our team creates user-centric designs that engage and delight users.",
+          "contact_email": "contact@creativeminds.com",
+          "contact_phone": "+1-555-0404"
+      }
+  },
+  {
+      "id": 5,
+      "title": "Plumber",
+      "type": "Full-Time",
+      "description": "Install and repair piping systems in residential and commercial buildings. Ideal for licensed plumbers with strong troubleshooting skills and a commitment to quality service.",
+      "salary_range": "$40,000 - $60,000",
+      "location": "Chicago, IL",
+      "company": {
+          "name": "Pipe Masters Inc.",
+          "description": "Pipe Masters Inc. has been providing reliable plumbing services for over 15 years. Our licensed plumbers are known for their quick, efficient service and high-quality work.",
+          "contact_email": "info@pipemasters.com",
+          "contact_phone": "+1-555-0505"
+      }
+  },
+  {
+      "id": 6,
+      "title": "Marketing Manager",
+      "type": "Full-Time",
+      "description": "Develop and execute marketing strategies to drive brand awareness and sales. Ideal for candidates with experience in digital marketing, project management, and market research.",
+      "salary_range": "$60,000 - $90,000",
+      "location": "Los Angeles, CA",
+      "company": {
+          "name": "Brand Evolution Agency",
+          "description": "Brand Evolution Agency is a full-service marketing firm that helps businesses grow through innovative digital strategies and creative campaigns. We partner with brands to deliver exceptional marketing results.",
+          "contact_email": "hr@brandevolution.com",
+          "contact_phone": "+1-555-0606"
+      }
+  },
+  {
+      "id": 7,
+      "title": "Web Developer",
+      "type": "Freelance",
+      "description": "Develop responsive websites and web applications for clients. Ideal for candidates with expertise in front-end and back-end development and experience with modern frameworks.",
+      "salary_range": "$30 - $50/hour",
+      "location": "Remote",
+      "company": {
+          "name": "Web Wizards",
+          "description": "Web Wizards is a freelance web development company that specializes in creating custom websites and web applications. Our team works closely with clients to bring their digital visions to life.",
+          "contact_email": "contact@webwizards.com",
+          "contact_phone": "+1-555-0707"
+      }
+  },
+  {
+      "id": 8,
+      "title": "Data Scientist",
+      "type": "Full-Time",
+      "description": "Analyze large datasets to derive actionable insights and build predictive models. Ideal for candidates with experience in machine learning, data analysis, and statistical methods.",
+      "salary_range": "$80,000 - $120,000",
+      "location": "Austin, TX",
+      "company": {
+          "name": "Data Insights Inc.",
+          "description": "Data Insights Inc. is a leading data analytics company that helps organizations make data-driven decisions. We provide actionable insights to improve business strategies and optimize operations.",
+          "contact_email": "hr@datainsights.com",
+          "contact_phone": "+1-555-0808"
+      }
+  },
+  {
+      "id": 9,
+      "title": "Mechanical Engineer",
+      "type": "Full-Time",
+      "description": "Design and develop mechanical systems and components for various industries. Ideal for candidates with strong problem-solving skills and experience in CAD software and manufacturing processes.",
+      "salary_range": "$70,000 - $100,000",
+      "location": "Detroit, MI",
+      "company": {
+          "name": "TechMech Solutions",
+          "description": "TechMech Solutions specializes in providing engineering solutions for the automotive and manufacturing industries. We focus on designing cutting-edge mechanical systems to improve efficiency and performance.",
+          "contact_email": "contact@techmechsolutions.com",
+          "contact_phone": "+1-555-0909"
+      }
+  },
+  {
+      "id": 10,
+      "title": "Customer Support Representative",
+      "type": "Part-Time",
+      "description": "Provide exceptional customer service through email, chat, and phone support. Ideal for candidates with strong communication skills and a friendly, problem-solving attitude.",
+      "salary_range": "$15 - $20/hour",
+      "location": "Remote",
+      "company": {
+          "name": "Support Pros",
+          "description": "Support Pros is a customer service agency that specializes in providing high-quality support for businesses. Our team helps companies deliver excellent service to their customers, ensuring satisfaction.",
+          "contact_email": "info@supportpros.com",
+          "contact_phone": "+1-555-1010"
+      }
+  },
+  {
+      "id": 11,
+      "title": "Chef",
+      "type": "Full-Time",
+      "description": "Prepare and cook high-quality meals in a fast-paced kitchen environment. Ideal for candidates with a passion for cooking and experience in managing kitchen operations.",
+      "salary_range": "$40,000 - $60,000",
+      "location": "Miami, FL",
+      "company": {
+          "name": "Gourmet Eats Restaurant",
+          "description": "Gourmet Eats Restaurant offers a fine dining experience with a focus on locally sourced ingredients and creative dishes. Our chefs are passionate about delivering exceptional meals that leave a lasting impression.",
+          "contact_email": "careers@gourmeteats.com",
+          "contact_phone": "+1-555-1111"
+      }
+  },
+  {
+      "id": 12,
+      "title": "Accountant",
+      "type": "Full-Time",
+      "description": "Manage financial records, prepare reports, and ensure compliance with tax regulations. Ideal for candidates with strong attention to detail and experience with accounting software and financial analysis.",
+      "salary_range": "$55,000 - $75,000",
+      "location": "Dallas, TX",
+      "company": {
+          "name": "Precision Accounting Solutions",
+          "description": "Precision Accounting Solutions provides expert financial services to businesses and individuals. Our team helps clients manage their finances effectively and stay compliant with regulations.",
+          "contact_email": "info@precisionaccounting.com",
+          "contact_phone": "+1-555-1212"
+      }
+  }
+  ]
+}

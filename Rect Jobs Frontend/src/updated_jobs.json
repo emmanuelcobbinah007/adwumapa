@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "title": "Software Engineer",
+        "type": "Full-Time",
+        "description": "Design, develop, and maintain innovative applications while collaborating with teams to deliver optimized solutions and meet user needs. Ideal for candidates skilled in modern programming languages, experienced in agile workflows, and eager to tackle technical challenges.",
+        "salary_range": "$70,000 - $100,000",
+        "location": "San Francisco, CA",
+        "company": {
+            "name": "Tech Innovators Inc.",
+            "description": "Tech Innovators Inc. is at the forefront of technological advancements, creating cutting-edge software solutions that empower businesses worldwide. Our mission is to simplify complex processes and deliver unparalleled value through our innovative platforms and tools.",
+            "contact_email": "hr@techinnovators.com",
+            "contact_phone": "+1-555-0101"
+        }
+    },
+    {
+        "id": 2,
+        "title": "Graphic Designer",
+        "type": "Freelance",
+        "description": "Create visually appealing designs for digital and print media while collaborating with clients to bring their visions to life. Ideal for candidates proficient in design software, with a keen eye for detail and a creative approach to problem-solving.",
+        "salary_range": "$25 - $50/hour",
+        "location": "Remote",
+        "company": {
+            "name": "Design Studio Co.",
+            "description": "Design Studio Co. specializes in crafting unique visual experiences for brands and individuals. From logos to websites, our talented team ensures every project exceeds expectations with creativity and precision.",
+            "contact_email": "info@designstudio.com",
+            "contact_phone": "+1-555-0202"
+        }
+    },
+    {
+        "id": 3,
+        "title": "Electrician",
+        "type": "Full-Time",
+        "description": "Install, repair, and maintain electrical systems in residential and commercial settings. Ideal for licensed professionals with strong problem-solving skills and a commitment to safety standards.",
+        "salary_range": "$45,000 - $65,000",
+        "location": "New York, NY",
+        "company": {
+            "name": "Bright Sparks Electricals",
+            "description": "Bright Sparks Electricals has been powering homes and businesses with reliable electrical solutions for over a decade. Our team is dedicated to providing top-notch service with a focus on safety and efficiency.",
+            "contact_email": "support@brightsparks.com",
+            "contact_phone": "+1-555-0303"
+        }
+    }
+]
