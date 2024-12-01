@@ -1,20 +1,32 @@
 import './App.css'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/header'
-import Hero from './components/Hero'
-import Cards from './components/Cards'
-import Jobs from './Jobs'
+import HomePage from './pages/HomePage';
+import AddJob from './pages/AddJob';
+import AllJobs from './pages/AllJobs';
 import Footer from './components/Footer'
 
 function App() {
 
   return (
-    <>
-    <Header />
-    <Hero />
-    <Cards />
-    <Jobs />
-    <Footer />
-    </>
+    <Router>
+      <Header />
+        <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/add_job" element={<AddJob />} />
+        <Route path="/all_jobs" element={<AllJobs />} />
+        </Routes>
+      <Footer />
+    </Router>
+
+
+    // <>
+    // <Header />
+    // <Hero />
+    // <Cards />
+    // <Jobs />
+    // <Footer />
+    // </>
   )
 }
 
