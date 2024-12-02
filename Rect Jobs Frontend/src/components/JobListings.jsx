@@ -11,7 +11,7 @@ const JobListings = ({ job }) => {
     }
 
   return (
-    <div className='mx-5 px-5 py-2 rounded-lg shadow-lg text-md w-[100%]'>
+    <div className='my-5 px-5 py-2 rounded-lg shadow-lg text-md mx-3'>
         <p className='pt-2'>{job.type}</p>
         <h1 className='font-bold text-xl py-3'>{job.title}</h1>
         <p className='text-sm'>{description}</p>
