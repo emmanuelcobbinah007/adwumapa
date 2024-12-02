@@ -6,6 +6,7 @@ import AddJob from './pages/AddJob';
 import AllJobs from './pages/AllJobs';
 import Footer from './components/Footer'
 import NotFoundPage from './pages/NotFoundPage';
+import JobPage from './pages/JobPage';
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/add_job" element={<AddJob />} />
         <Route path="/all_jobs" element={<AllJobs />} />
+        <Route path="/all_jobs/:id" element={<JobPage />} />
         <Route path="*" element={<NotFoundPage />} />
         </Routes>
       <Footer />

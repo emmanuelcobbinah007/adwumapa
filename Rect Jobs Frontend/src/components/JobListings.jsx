@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import { FaMapPin } from 'react-icons/fa';
 import { useState } from 'react';
 
@@ -23,7 +24,7 @@ const JobListings = ({ job }) => {
          <FaMapPin className='py-1 my-4 size-6'/>
          <p className='text-gray-600 italic py-1 my-3'>{job.location}</p>
           </div> 
-        <button className='bg-[#2d2d2d] text-white px-3 py-1 my-3 rounded shadow-md hover:bg-emerald-600 transition-all duration-300'>Read More</button>
+        <Link to={`/all_jobs/${job.id}`}><button className='bg-[#2d2d2d] text-white px-3 py-1 my-3 rounded shadow-md hover:bg-emerald-600 transition-all duration-300'>Read More</button></Link>
         </div>
     </div>
   )
