@@ -2,7 +2,7 @@ import React from 'react'
 import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 
-const Card = ({title, tagline, buttonText, bgColour, btnColour}) => {
+const Card = ({title, tagline, buttonText, bgColour}) => {
 
   const [buttonTrigger, setButtonTrigger] = useState(false);
 
@@ -17,7 +17,7 @@ const Card = ({title, tagline, buttonText, bgColour, btnColour}) => {
             <h1 className='bg-inherit font-bold py-2 text-lg'>{title}</h1>
             <p className='bg-inherit text-md py-1'>{tagline}</p>
 
-            {buttonTrigger ? <Link to="/all_jobs"><button className={`py-1 px-3 my-3 mb-3 bg-[${btnColour}] text-md rounded-md text-white hover:scale-105 transition-all duration-300 shadow-md hover:font-semibold`}>{buttonText}</button></Link> : <button className={`py-1 px-3 my-3 mb-3 bg-[${btnColour}] text-md rounded-md text-white hover:scale-105 transition-all duration-300 shadow-md hover:font-semibold`}>{buttonText}</button>}
+            {buttonTrigger ? <Link to="/all_jobs"><button className={`py-1 px-3 my-3 mb-3 bg-[#2d2d2d] text-md rounded-md text-white hover:scale-105 transition-all duration-300 shadow-md hover:font-semibold`}>{buttonText}</button></Link> : <button className={`py-1 px-3 my-3 mb-3 bg-[#2ecc71] text-md rounded-md text-white hover:scale-105 transition-all duration-300 shadow-md hover:font-semibold`}>{buttonText}</button>}
 
         </div>
   )

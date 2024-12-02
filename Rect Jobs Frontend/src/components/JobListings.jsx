@@ -1,4 +1,5 @@
 import React from 'react'
+import { FaMapPin } from 'react-icons/fa';
 import { useState } from 'react';
 
 const JobListings = ({ job }) => {
@@ -18,7 +19,10 @@ const JobListings = ({ job }) => {
         <p className='font-semibold text-[#333] py-1 rounded'>{job.salary_range}</p>
         <hr />
         <div className='flex justify-between'>
-        <p className='text-gray-600 italic py-1 my-3'>{job.location}</p>
+         <div className='flex'>
+         <FaMapPin className='py-1 my-4 size-6'/>
+         <p className='text-gray-600 italic py-1 my-3'>{job.location}</p>
+          </div> 
         <button className='bg-[#2d2d2d] text-white px-3 py-1 my-3 rounded shadow-md hover:bg-emerald-600 transition-all duration-300'>Read More</button>
         </div>
     </div>
