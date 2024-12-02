@@ -1,8 +1,8 @@
 import React from 'react'
 import { useEffect, useState } from 'react'
-import jobData from '../jobs.json'
 import JobListings from './JobListings'
 import ViewAllJobs from './ViewAllJobs'
+import Spinner from './Spinner'
 
 const Jobs = ({jobsPageActive = false}) => {
 
@@ -34,12 +34,16 @@ const Jobs = ({jobsPageActive = false}) => {
   return (
     <div>
          <h1 className='bg-inherit text-center text-2xl font-bold py-8 text-[#2ECC71]'>{jobsPageActive ? 'All Jobs' : 'Browse Jobs'}</h1>
-        <div className='grid grid-cols-3 max-w-[90%] mx-auto mb-12'>
-        {recentJobs.map((job) => (
+        {loading ? 
+        <Spinner loading = {loading} />
+         : 
+         <div className='grid grid-cols-3 max-w-[90%] mx-auto mb-12'>
+         {recentJobs.map((job) => (
             <JobListings job = {job} key={job.id}/>
         ))}
         </div>
-        <ViewAllJobs />
+        }
+        {jobsPageActive ? '' : <ViewAllJobs />} 
     </div>
   )
 }
