@@ -11,9 +11,10 @@ const Jobs = ({jobsPageActive = false}) => {
 
   useEffect(() => {
      const fetchData = async() => {
+      const apiURL = jobsPageActive ? '/api/jobs' : '/api/jobs?_limit=3';
 
       try {
-        const res = await fetch('http://localhost:5000/jobs');
+        const res = await fetch(apiURL);
         const data = await res.json();
 
         setJobs(data);
