@@ -43,28 +43,31 @@ const JobPage = () => {
           </div> 
     </div>
     <div className=' my-5 px-5 py-2 rounded-lg shadow-lg text-md mx-8'>
-        <p className='font-bold '>Job Description</p>
+        <p className='font-bold text-lg py-2'>Job Description:</p>
         <p>{job.description}</p>
 
-        <p>Salary</p>
+        <p className='py-2 text-lg font-bold'>Salary:</p>
+        <div className='flex justify-between'>
         <p>{job.salary_range}</p>
+        <button className='py-1 px-3 mb-3 bg-[#2ecc71] text-md rounded-md text-white hover:bg-emerald-600 transition-all duration-300 shadow-md'>Apply</button>
+        </div>
     </div>
     </div>
 
     <div className='col-span-2'>
-        <div>
-            <p>Company Info</p>
+        <div className=' my-5 px-5 pt-2 pb-4 rounded-lg shadow-lg text-md mx-8'>
+            <p className='font-bold text-lg py-2'>Company Info</p>
             <p>{job.company.name}</p>
             <p>{job.company.description}</p>
 
-            <p>Contact Email</p>
-            <p>{job.company.contact_email}</p>
+            <p className='font-bold text-md pt-2 pb-1'>Contact Email</p>
+            <p className='bg-[#f9f9fb] p-2 rounded-lg'>{job.company.contact_email}</p>
 
-            <p>Contact Phone</p>
-            <p>{job.company.contact_phone}</p>
+            <p className='font-bold text-md pt-2 pb-1'>Contact Phone</p>
+            <p className='bg-[#f9f9fb] p-2 rounded-lg'>{job.company.contact_phone}</p>
         </div>
-        <div>
-            <p>Manage Job</p>
+        <div className=' my-5 px-5 py-2 rounded-lg shadow-lg text-md mx-8'>
+            <p className='font-bold text-lg py-2'>Manage Job</p>
             <div className='flex justify-between'>
             <button>Edit Job</button>
             <button>Delete Job</button>
