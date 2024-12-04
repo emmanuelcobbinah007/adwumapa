@@ -1,5 +1,6 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
+import { FaMapPin } from 'react-icons/fa';
 import Spinner from '../components/Spinner';
 import { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom';
@@ -29,17 +30,20 @@ const JobPage = () => {
 
 
   return loading ? <Spinner /> : (
-  <div className='max-w-[80%] mx-auto'>
-    <Link to='/all_jobs'><button className=''>Back</button></Link>
+  <div className='max-w-[1200px] mx-auto my-6'>
+    {/* <Link to='/all_jobs'><button className=''>Back to Jobs</button></Link> */}
     <div className='grid grid-cols-5'>
     <div className='col-span-3'>
-    <div>
-    <h1>{job.type}</h1>
-    <h1>{job.title}</h1>
-    <h1>{job.location}</h1>
+    <div className=' my-5 px-5 py-2 rounded-lg shadow-lg text-md mx-8'>
+    <h1 className='px-2'>{job.type}</h1>
+    <h1 className='font-bold text-3xl py-[2px]'>{job.title}</h1>
+    <div className='flex'>
+         <FaMapPin className='my-4 size-4 mr-1'/>
+         <p className='text-gray-600 italic my-3 text-lg'>{job.location}</p>
+          </div> 
     </div>
-    <div>
-        <p>Job Description</p>
+    <div className=' my-5 px-5 py-2 rounded-lg shadow-lg text-md mx-8'>
+        <p className='font-bold '>Job Description</p>
         <p>{job.description}</p>
 
         <p>Salary</p>
@@ -59,7 +63,13 @@ const JobPage = () => {
             <p>Contact Phone</p>
             <p>{job.company.contact_phone}</p>
         </div>
-        <div>Manage Job</div>
+        <div>
+            <p>Manage Job</p>
+            <div className='flex justify-between'>
+            <button>Edit Job</button>
+            <button>Delete Job</button>
+            </div>
+        </div>
     </div>
   </div>
   </div>
