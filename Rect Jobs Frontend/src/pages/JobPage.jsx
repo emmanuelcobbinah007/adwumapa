@@ -57,9 +57,9 @@ const JobPage = () => {
     <div className='col-span-2'>
         <div className=' my-5 px-5 pt-2 pb-4 rounded-lg shadow-lg text-md mx-8'>
             <p className='font-bold text-lg py-2'>Company Info</p>
-            <p>{job.company.name}</p>
-            <p>{job.company.description}</p>
-
+            <p className='font-semibold'>{job.company.name}</p>
+            <p className='pb-2'>{job.company.description}</p>
+            <hr />
             <p className='font-bold text-md pt-2 pb-1'>Contact Email</p>
             <p className='bg-[#f9f9fb] p-2 rounded-lg'>{job.company.contact_email}</p>
 
@@ -68,9 +68,9 @@ const JobPage = () => {
         </div>
         <div className=' my-5 px-5 py-2 rounded-lg shadow-lg text-md mx-8'>
             <p className='font-bold text-lg py-2'>Manage Job</p>
-            <div className='flex justify-between'>
-            <button>Edit Job</button>
-            <button>Delete Job</button>
+            <div className=''>
+            <button className='block text-center text-white w-[90%] mx-auto py-1 my-3 rounded-2xl bg-[#2ecc71] hover:bg-emerald-600 transition-all duration-300 shadow-md'>Edit Job</button>
+            <button className='block text-white text-center font-semibold w-[90%] mx-auto py-1 my-3 rounded-2xl bg-[#FF0000] hover:bg-[#DC143C] transition-all duration-300 shadow-md'>Delete Job</button>
             </div>
         </div>
     </div>
