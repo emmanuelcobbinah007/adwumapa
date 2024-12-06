@@ -167,6 +167,20 @@
         "contact_email": "info@precisionaccounting.com",
         "contact_phone": "+1-555-1212"
       }
+    },
+    {
+      "id": "c6e8",
+      "type": "Full-Time",
+      "title": "Meme Lord",
+      "description": "Collate the best memes from across the interwebs.",
+      "salary_range": "Over $200K",
+      "location": "Remote",
+      "company": {
+        "name": "Hiddie Tech",
+        "description": "A very awesome company",
+        "contact_email": "hiddietech@gmail.com",
+        "contact_phone": "+233245338860"
+      }
     }
   ]
 }

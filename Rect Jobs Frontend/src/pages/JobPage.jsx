@@ -84,7 +84,7 @@ const JobPage = ({ deleteJob }) => {
         <div className=' my-5 px-5 py-2 rounded-lg shadow-lg text-md mx-8'>
             <p className='font-bold text-lg py-2'>Manage Job</p>
             <div className=''>
-            <button className='block text-center text-white w-[90%] mx-auto py-1 my-3 rounded-2xl bg-[#2ecc71] hover:bg-emerald-600 transition-all duration-300 shadow-md'>Edit Job</button>
+            <Link to={`/edit_job/${job.id}`}><button className='block text-center text-white w-[90%] mx-auto py-1 my-3 rounded-2xl bg-[#2ecc71] hover:bg-emerald-600 transition-all duration-300 shadow-md'>Edit Job</button></Link>
             <button onClick={() => onDeleteClick(job.id)} className='block text-white text-center font-semibold w-[90%] mx-auto py-1 my-3 rounded-2xl bg-[#FF0000] hover:bg-[#DC143C] transition-all duration-300 shadow-md'>Delete Job</button>
             </div>
         </div>
