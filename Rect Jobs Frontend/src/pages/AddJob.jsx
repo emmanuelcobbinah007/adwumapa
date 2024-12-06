@@ -1,7 +1,9 @@
 import React from 'react'
 import { useState } from 'react'
+import { useNavigate } from 'react-router-dom';
+import { toast } from 'react-toastify';
 
-const AddJob = () => {
+const AddJob = ({ addJobSubmit }) => {
   const [type, setType] = useState('Full-Time');
   const [title, setTitle] = useState('');
   const [description, setDescription] = useState('');
@@ -12,6 +14,8 @@ const AddJob = () => {
   const [contactEmail, setContactEmail] = useState('');
   const [contactPhone, setContactPhone] = useState('');
 
+  const navigate = useNavigate();
+
   const submitForm = (e) => {
     e.preventDefault();
 
@@ -19,15 +23,22 @@ const AddJob = () => {
       type,
       title,
       description,
-      salary,
+      salary_range: salary,
       location,
       company: {
         name: companyName,
         description: companyDescription,
-        contactEmail,
-        contactPhone
-      }
-    }
+        contact_email: contactEmail,
+        contact_phone: contactPhone,
+      },
+    };
+
+    addJobSubmit(newJob);
+
+    toast.success('Job added successfully');
+
+    return navigate('/all_jobs')
+
   }
 
 

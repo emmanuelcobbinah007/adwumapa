@@ -4,11 +4,26 @@ import { FaMapPin } from 'react-icons/fa';
 import Spinner from '../components/Spinner';
 import { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
+import { toast } from 'react-toastify';
 
-const JobPage = () => {
+const JobPage = ({ deleteJob }) => {
+  const navigate = useNavigate();
     const { id } = useParams();
     const [ job, setJob] = useState(null);
     const [ loading, setLoading ] = useState(true)
+
+    const onDeleteClick = (jobID) => {
+      const confirm = window.confirm('Are you sure you want to delete this listing?')
+
+      if (!confirm) return;
+
+      deleteJob(jobID);
+
+      toast.success('Job Deleted Successfully')
+
+      navigate('/all_jobs')
+    }
 
     useEffect(() => {
         const fetchJob = async() => {
@@ -70,7 +85,7 @@ const JobPage = () => {
             <p className='font-bold text-lg py-2'>Manage Job</p>
             <div className=''>
             <button className='block text-center text-white w-[90%] mx-auto py-1 my-3 rounded-2xl bg-[#2ecc71] hover:bg-emerald-600 transition-all duration-300 shadow-md'>Edit Job</button>
-            <button className='block text-white text-center font-semibold w-[90%] mx-auto py-1 my-3 rounded-2xl bg-[#FF0000] hover:bg-[#DC143C] transition-all duration-300 shadow-md'>Delete Job</button>
+            <button onClick={() => onDeleteClick(job.id)} className='block text-white text-center font-semibold w-[90%] mx-auto py-1 my-3 rounded-2xl bg-[#FF0000] hover:bg-[#DC143C] transition-all duration-300 shadow-md'>Delete Job</button>
             </div>
         </div>
     </div>
