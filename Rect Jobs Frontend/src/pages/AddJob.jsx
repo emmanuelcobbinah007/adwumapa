@@ -35,7 +35,7 @@ const AddJob = ({ addJobSubmit }) => {
 
     addJobSubmit(newJob);
 
-    toast.success('Job added successfully');
+    toast.success('Job Added Successfully');
 
     return navigate('/all_jobs')
 

@@ -38,7 +38,7 @@ const Jobs = ({jobsPageActive = false}) => {
         {loading ? 
         <Spinner loading = {loading} />
          : 
-         <div className='grid grid-cols-3 max-w-[90%] mx-auto mb-12'>
+         <div className='grid md:grid-cols-2 lg:grid-cols-3 max-w-[90%] mx-auto lg:mb-12'>
          {recentJobs.map((job) => (
             <JobListings job = {job} key={job.id}/>
         ))}
