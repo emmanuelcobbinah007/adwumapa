@@ -16,7 +16,7 @@ const Footer = () => {
             <FaYoutube size={30} />
         </div>
         </div>
-        <div className='text-sm lg:col-span-2 flex justify-between mt-6'>
+        <div className='lg:col-span-2 flex justify-between mt-6'>
         <div>
             <h6 className='font-medium text-gray-400'>Solutions</h6>
             <ul>
