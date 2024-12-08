@@ -27,13 +27,13 @@ const Header = () => {
           </div>
 
           {/* mobile NavBar */}
-          <div className={!nav ? 'fixed left-0 top-0 w-[60%] h-full bg-white border-r border-r-grey-700 shadow-xl ease-in-out duration-500' : 'fixed left-[-100%] top-0 w-[60%] h-full bg-white border-r border-r-grey-700 shadow-xl ease-in-out duration-500'}>
-          <NavLink to="/"><h1 className='font-bold lg:text-4xl md:text-3xl text-2xl hover:cursor-pointer text-[#2ECC71] mx-5 mt-6 mb-4'>adwumapa!</h1></NavLink>
+          <div className={!nav ? 'sm:hidden fixed left-0 top-0 w-[60%] h-full bg-white border-r border-r-grey-700 shadow-xl ease-in-out duration-500' : 'sm:hidden fixed left-[-100%] top-0 w-[60%] h-full bg-white border-r border-r-grey-700 shadow-xl ease-in-out duration-500'}>
+          <NavLink to="/"><h1 className='font-bold text-2xl hover:cursor-pointer text-[#2ECC71] mx-5 mt-6 mb-4'>adwumapa!</h1></NavLink>
             <ul className='text-lg p-4'>
-            <NavLink to="/" className={toggleNavClass}><li className='p-4 border-b border-b-grey-700'>Home</li></NavLink>
-            <NavLink to="/all_jobs" className={toggleNavClass}><li className='p-4 border-b border-b-grey-700'>Jobs</li></NavLink>
-            <NavLink to="/add_job" className={toggleNavClass}><li className='p-4 border-b border-b-grey-700'>Post a Job</li></NavLink>
-            <NavLink to="/sign_in" className={toggleNavClass}><li className='p-4'>Sign In</li></NavLink>
+            <NavLink to="/" onClick={handleNav} className={toggleNavClass}><li className='p-4 border-b border-b-grey-700'>Home</li></NavLink>
+            <NavLink to="/all_jobs" onClick={handleNav} className={toggleNavClass}><li className='p-4 border-b border-b-grey-700'>Jobs</li></NavLink>
+            <NavLink to="/add_job" onClick={handleNav} className={toggleNavClass}><li className='p-4 border-b border-b-grey-700'>Post a Job</li></NavLink>
+            <NavLink to="/sign_in" onClick={handleNav} className={toggleNavClass}><li className='p-4'>Sign In</li></NavLink>
             </ul>
           </div>
           
