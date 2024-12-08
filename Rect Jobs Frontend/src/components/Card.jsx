@@ -13,7 +13,7 @@ const Card = ({title, tagline, buttonText, bgColour}) => {
   }, [])
 
   return (
-    <div className={`my-5 mx-auto md:mx-5 px-6 py-4 rounded-md md:w-[40%] w-[90%] bg-[${bgColour}] shadow-lg`}>
+    <div className={`my-5 mx-auto md:mx-5 px-6 py-4 rounded-md md:w-[40%] w-[85%] bg-[${bgColour}] shadow-lg`}>
             <h1 className='bg-inherit font-bold py-2 text-lg'>{title}</h1>
             <p className='bg-inherit text-md py-1'>{tagline}</p>
 

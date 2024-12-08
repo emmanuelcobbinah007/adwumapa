@@ -80,7 +80,7 @@ const EditJobPage = ({ updateJobSubmit }) => {
   return loading ? <Spinner /> : (
     <div className='bg-white'>
       <div className='bg-white py-3'></div>
-      <div className='lg:w-[50%] w-[80%] mx-auto mt-[15px] mb-16 bg-white rounded-lg shadow-lg pb-5'>
+      <div className='lg:w-[50%] w-[85%] mx-auto mt-[15px] mb-16 bg-white rounded-lg shadow-lg pb-5'>
         <form
         onSubmit={handleSubmit}
         >
