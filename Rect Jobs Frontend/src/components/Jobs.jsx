@@ -34,7 +34,7 @@ const Jobs = ({jobsPageActive = false}) => {
 
   return (
     <div>
-         <h1 className='bg-inherit text-center text-2xl font-bold py-8 text-[#2ECC71]'>{jobsPageActive ? 'Browse Jobs' : 'Recent Jobs'}</h1>
+         <h1 className='bg-inherit text-center md:text-2xl text-xl font-bold md:py-8 pt-8 text-[#2ECC71]'>{jobsPageActive ? 'Browse Jobs' : 'Recent Jobs'}</h1>
         {loading ? 
         <Spinner loading = {loading} />
          : 

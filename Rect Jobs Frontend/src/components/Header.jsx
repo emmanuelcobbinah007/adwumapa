@@ -7,7 +7,7 @@ const Header = () => {
 
   const toggleNavClass = ({ isActive }) => isActive ? 'hover:font-bold transition-all duration-300 ease-in-out transform hover:cursor-pointer font-bold' : 'hover:font-bold transition-all duration-300 ease-in-out transform hover:cursor-pointer'
 
-  const [ nav, setNav ] = useState(false);
+  const [ nav, setNav ] = useState(true);
 
   const handleNav = () => {
     setNav(!nav);
@@ -22,7 +22,7 @@ const Header = () => {
             <NavLink to="/add_job" className={toggleNavClass}><li className='md:px-5 px-3 '>Post a Job</li></NavLink>
             <NavLink to="/sign_in" className={toggleNavClass}><li className='md:px-5 px-3'>Sign In</li></NavLink>
           </ul>
-          <div onClick={handleNav} className='sm:hidden'>
+          <div onClick={handleNav} className='sm:hidden hover:cursor-pointer'>
             {!nav ? <AiOutlineClose size={20}/> : <AiOutlineMenu size={20} />}
           </div>
 
