@@ -6,7 +6,7 @@ const Footer = () => {
     <div className='bg-[#111]'>
         <div className='max-w-[1200px] mx-auto py-16 px-4 grid lg:grid-cols-3 gap-8 text-gray-300'>
         <div>
-        <h1 className='m-4 w-full text-3xl font-bold text-[#2ECC71]'>adwumapa!</h1>
+        <h1 className='font-bold lg:text-4xl md:text-3xl text-2xl hover:cursor-pointer text-[#2ECC71]'>adwumapa!</h1>
         <p className='py-4'>Discover your next opportunity! Whether you're an artisan, professional, or employer, our platform connects talent with endless possibilities. Join us today and take the next step toward success!</p>
         <div className='flex justify-between md:w-[75%] my-6'>
             <FaFacebookSquare size={30}/>
@@ -16,7 +16,7 @@ const Footer = () => {
             <FaYoutube size={30} />
         </div>
         </div>
-        <div className='lg:col-span-2 flex justify-between mt-6'>
+        <div className='text-sm lg:col-span-2 flex justify-between mt-6'>
         <div>
             <h6 className='font-medium text-gray-400'>Solutions</h6>
             <ul>
@@ -32,7 +32,7 @@ const Footer = () => {
                 <li className='py-2 text-sm'>Browse Jobs</li>
                 <li className='py-2 text-sm'>Career Advice</li>
                 <li className='py-2 text-sm'>Build Your Resume</li>
-                <li className='py-2 text-sm'>AApplication Tips</li>
+                <li className='py-2 text-sm'>Application Tips</li>
             </ul>
         </div>
         <div>
