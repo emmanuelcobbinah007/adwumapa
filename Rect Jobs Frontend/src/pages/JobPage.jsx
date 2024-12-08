@@ -51,7 +51,7 @@ const JobPage = ({ deleteJob }) => {
     <div className='md:col-span-3'>
     <div className=' my-5 px-5 py-2 rounded-lg shadow-lg text-md mx-8'>
     <h1 className='px-2'>{job.type}</h1>
-    <h1 className='font-bold text-3xl py-[2px]'>{job.title}</h1>
+    <h1 className='font-bold text-2xl md:text-3xl py-[2px]'>{job.title}</h1>
     <div className='flex'>
          <FaMapPin className='my-4 size-4 mr-1'/>
          <p className='text-gray-600 italic my-3 text-lg'>{job.location}</p>
