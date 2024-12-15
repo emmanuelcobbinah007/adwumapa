@@ -167,20 +167,6 @@
         "contact_email": "info@precisionaccounting.com",
         "contact_phone": "+1-555-1212"
       }
-    },
-    {
-      "id": "97ae",
-      "type": "Full-Time",
-      "title": "Software Engineer",
-      "description": "Make software",
-      "salary_range": "Under $50K",
-      "location": "Remote",
-      "company": {
-        "name": "Aurora Software Labs",
-        "description": "An awesome company",
-        "contact_email": "info@aslabs.com",
-        "contact_phone": "0245338860"
-      }
     }
   ]
 }
