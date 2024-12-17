@@ -11,14 +11,14 @@ const Jobs = ({jobsPageActive = false}) => {
 
   useEffect(() => {
      const fetchData = async() => {
-      const apiURL = jobsPageActive ? '/api/jobs' : '/api/jobs?_limit=3';
+      const apiURL = jobsPageActive ? 'http://localhost:5000/api/jobs' : 'http://localhost:5000/api/jobs?_limit=3';
 
       try {
         const res = await fetch(apiURL);
         const data = await res.json();
 
         setJobs(data);
-
+        console.log(jobs);
       } catch (error) {
         console.log('Error Fetching Data')
       } finally {
@@ -40,7 +40,7 @@ const Jobs = ({jobsPageActive = false}) => {
          : 
          <div className='grid md:grid-cols-2 lg:grid-cols-3 max-w-[90%] mx-auto lg:mb-12'>
          {recentJobs.map((job) => (
-            <JobListings job = {job} key={job.id}/>
+            <JobListings job = {job} key={job._id}/>
         ))}
         </div>
         }

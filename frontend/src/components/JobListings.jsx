@@ -24,7 +24,7 @@ const JobListings = ({ job }) => {
          <FaMapPin className='py-1 my-4 size-6'/>
          <p className='text-gray-600 italic py-1 my-3'>{job.location}</p>
           </div> 
-        <Link to={`/all_jobs/${job.id}`}><button className='bg-[#2d2d2d] text-white px-3 py-1 my-3 rounded shadow-md hover:bg-emerald-600 transition-all duration-300'>Read More</button></Link>
+        <Link to={`/all_jobs/${job._id}`}><button className='bg-[#2d2d2d] text-white px-3 py-1 my-3 rounded shadow-md hover:bg-emerald-600 transition-all duration-300'>Read More</button></Link>
         </div>
     </div>
   )
