@@ -9,12 +9,22 @@ const app = express();
 
 app.use(express.json());
 
+//fetching all jobs
+app.get("/api/jobs", async (req, res) => {
+    try {
+        const data = await Job.find({});
+        res.status(200).json(data);
+    } catch (error) {
+        console.log(`Error in fetching data`);
+        res.status(500).json({success:false, message:"Error in fetching data"});
+    }
+})
+
+//adding a job
 app.post("/api/jobs", async (req, res) => {
     const job = req.body;
 
     const newJob = new Job(job);
-    // res.json(newJob);
-
     try {
         await newJob.save();
         res.status(201).json({success:true, data:newJob});
