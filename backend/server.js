@@ -2,6 +2,8 @@ import express from "express";
 import dotenv from "dotenv";
 import { connectToDB } from "./Config/db.js";
 import Job from "./models/job.product.js";
+import { useParams } from "react-router-dom";
+import mongoose from "mongoose";
 
 dotenv.config();
 
@@ -33,6 +35,23 @@ app.post("/api/jobs", async (req, res) => {
         res.status(500).json({success: false, message: "Server Error"});
     }
 
+})
+
+//deleting a job
+app.delete("/api/jobs/:id", async (req, res) => {
+    const {id} = req.params;
+
+     if(!mongoose.Types.ObjectId.isValid(id)) {
+         return res.status(404).json({success:false, message:"Invalid Id, Please try again"})
+     }
+
+    try {
+        await Job.findByIdAndDelete(id);
+        res.status(200).json({success:true, message:"Job deleted"})
+    } catch (error) {
+        console.log("Error in deleting data");
+        res.status(500).json({success:false, message:"Error in deleting data"})
+    }
 })
 
 app.listen(5000, () => {
