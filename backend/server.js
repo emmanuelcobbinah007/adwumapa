@@ -11,7 +11,7 @@ const app = express();
 
 app.use(express.json());
 
-//fetching all jobs
+//fetch all jobs
 app.get("/api/jobs", async (req, res) => {
     try {
         const data = await Job.find({});
@@ -22,7 +22,7 @@ app.get("/api/jobs", async (req, res) => {
     }
 })
 
-//adding a job
+//add a job
 app.post("/api/jobs", async (req, res) => {
     const job = req.body;
 
@@ -37,7 +37,7 @@ app.post("/api/jobs", async (req, res) => {
 
 })
 
-//deleting a job
+//delete a job
 app.delete("/api/jobs/:id", async (req, res) => {
     const {id} = req.params;
 
@@ -52,6 +52,24 @@ app.delete("/api/jobs/:id", async (req, res) => {
         console.log("Error in deleting data");
         res.status(500).json({success:false, message:"Error in deleting data"})
     }
+})
+
+//update a job
+app.put("/api/jobs/:id", async (req, res) => {
+    const {id} = req.params;
+    const job = req.body;
+
+    if(!mongoose.Types.ObjectId.isValid(id)) {
+        return res.status(404).json({success:false, message:"Invalid Id, Please try again"});
+    }
+
+    try {
+        const updatedJob = await Job.findByIdAndUpdate(id, job, {new:true});
+        res.status(200).json({success:true, data:updatedJob});
+    } catch (error) {
+       console.log(error);
+       res.status(500).json({success:false, message:"Error in Updating Job"}) 
+    }  
 })
 
 app.listen(5000, () => {
