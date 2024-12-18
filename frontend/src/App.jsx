@@ -38,6 +38,9 @@ function App() {
   
     const res = await fetch(`http://localhost:5000/api/jobs/${job.id}`, {
       method: 'PUT',
+      headers: {
+        'Content-Type': 'application/json',
+      },
       body: JSON.stringify(job),
     });
 
