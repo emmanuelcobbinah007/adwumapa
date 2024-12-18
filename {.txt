@@ -1,0 +1,13 @@
+{
+    "title": "Chill guy",
+    "type": "Intern",
+    "description": "Just a chill guy",
+    "salary_range": "$55,000 - $75,000",
+    "location": "Dallas, TX",
+    "company": {
+      "name": "Chill Inc",
+      "description": "Just a chill company",
+      "contact_email": "info@precisionaccounting.com",
+      "contact_phone": "+1-555-1212"
+    }
+  }

@@ -40,9 +40,9 @@ export const updateJob = async (req, res) => {
     const {id} = req.params;
     const job = req.body;
 
-    if(!mongoose.Types.ObjectId.isValid(id)) {
-        return res.status(404).json({success:false, message:"Invalid Id, Please try again"});
-    }
+    // if(!mongoose.Types.ObjectId.isValid(id)) {
+    //     return res.status(404).json({success:false, message:"Invalid Id, Please try again"});
+    // }
 
     try {
         const updatedJob = await Job.findByIdAndUpdate(id, job, {new:true});
@@ -56,9 +56,9 @@ export const updateJob = async (req, res) => {
 export const deleteJob = async (req, res) => {
     const {id} = req.params;
 
-     if(!mongoose.Types.ObjectId.isValid(id)) {
-         return res.status(404).json({success:false, message:"Invalid Id, Please try again"})
-     }
+    //  if(!mongoose.Types.ObjectId.isValid(id)) {
+    //      return res.status(404).json({success:false, message:"Invalid Id, Please try again"})
+    //  }
 
     try {
         await Job.findByIdAndDelete(id);

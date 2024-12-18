@@ -24,7 +24,7 @@ const EditJobPage = ({ updateJobSubmit }) => {
     useEffect(() => {
       const fetchJob = async () => {
         try {
-          const res = await fetch(`/api/jobs/${id}`);
+          const res = await fetch(`http://localhost:5000/api/jobs/${id}`);
           const data = await res.json();
   
           setJob(data);
@@ -65,6 +65,8 @@ const EditJobPage = ({ updateJobSubmit }) => {
           contact_phone: contactPhone,
         },
       };
+
+      console.log(type);
 
       updateJobSubmit(updatedJob);
 

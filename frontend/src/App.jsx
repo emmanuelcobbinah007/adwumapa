@@ -34,11 +34,13 @@ function App() {
   }
 
   const updateJob = async(job) => {
+    console.log(job);
+  
     const res = await fetch(`http://localhost:5000/api/jobs/${job.id}`, {
       method: 'PUT',
       body: JSON.stringify(job),
     });
-    
+
     return;
   } 
 
